@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example Cafe Menu</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 30px;
+        }
+
+        #page {
+            border: 1px solid #999;
+            padding: 0;
+        }
+
+        /* === HEADER voi background === */
+        #header {
+            background-color: #f4c2c2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header h1 {
+            color: darkred;
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* === NAVBAR voi background === */
+        #navbar {
+            background-color: #e8a0a0;
+            padding: 8px 15px;
+            text-align: center;
+        }
+
+        #navbar img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        #navbar a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin: 0 12px;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #navbar input[type="text"] {
+            margin-left: 30px;
+        }
+
+        /* === CONTENT === */
+        #content {
+            padding: 15px 20px;
+        }
+
+        h2 {
+            color: darkred;
+            background-color: #f5f0d0;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-top: 5px;
+        }
+
+        li {
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        li a {
+            color: purple;
+            font-size: 12px;
+        }
+
+        .special {
+            color: darkred;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .special a {
+            color: purple;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .back-to-top a {
+            color: red;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <a name="top"></a>
+
+        <!-- HEADER voi background mau hong -->
+        <div id="header">
+            <h1><i>EXAMPLE CAFE MENU</i></h1>
+        </div>
+
+        <!-- NAVBAR voi background mau hong dam -->
+        <div id="navbar">
+            <img src="icons8-home-50.png" alt="Home">
+            <a href="#starter">STARTER</a>
+            <a href="#maincourses">MAIN COURSES</a>
+            <a href="#desserts">DESSERTS</a>
+            <input type="text" size="15">
+            <input type="button" value="Go">
+        </div>
+
+        <!-- CONTENT -->
+        <div id="content">
+            <!-- STARTER -->
+            <a name="starter"></a>
+            <h2>Starter</h2>
+            <ul>
+                <li>Chesnut and Mushroom Goujons <a href="#">(v)</a></li>
+                <li>Goat Cheese<a href="#">(v)</a></li>
+                <li class="special">HONEY SOY CHICKEN KEBABS<a href="#">(V)</a></li>
+                <li>Seafood Salad<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+            <!-- DESSERTS -->
+            <a name="desserts"></a>
+            <h2>Desserts</h2>
+            <ul>
+                <li>Lemon Sorbet <a href="#">(v)</a></li>
+                <li>Chocolate Mud Pie<a href="#">(v)</a></li>
+                <li>Pecan Pie<a href="#">(v)</a></li>
+                <li>Selection of fine Cheeses from Around the World<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+        </div>
+
+    </div>
+</body>
+</html>

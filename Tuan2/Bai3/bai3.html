@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yoko's Kitchen</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 30px;
+            background-color: #f0f0f0;
+        }
+
+        #page {
+            width: 750px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* === HEADER === */
+        #header {
+            padding: 15px 20px;
+            background-image: url('background.png');
+            background-repeat: repeat;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #header img {
+            float: left;
+            width: 70px;
+            margin-left: 13px;
+        }
+
+        #header h1 {
+            margin: 5px 0 0 0;
+            font-size: 22px;
+            color: white;
+        }
+
+        #header p {
+            margin: 2px 0 0 0;
+            font-size: 12px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* === NAVBAR === */
+        #navbar {
+            background-color: #6b6b6b;
+            padding: 8px 20px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-right: 25px;
+        }
+
+
+        #navbar a.active {
+            color: black;
+        }
+
+        /* === MAIN CONTENT === */
+        #main {
+            padding: 15px 20px;
+        }
+
+        /* === COURSE ROW === */
+        .course-row {
+            overflow: hidden;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .course-img {
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .course-img img {
+            width: 100%;
+        }
+
+        .course-img p {
+            font-size: 11px;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        .course-text {
+            float: left;
+            width: 280px;
+        }
+
+        .course-text h2 {
+            margin: 0 0 5px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .course-text h3 {
+            margin: 0 0 8px 0;
+            font-size: 13px;
+            color: #f08080;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .course-text p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* === RIGHT SIDEBAR === */
+        #sidebar {
+            float: right;
+            width: 180px;
+        }
+
+        #sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        #sidebar a {
+            color: #f08080;
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        #sidebar h2.contact-heading {
+            margin-top: 20px;
+        }
+
+        #sidebar p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* === FOOTER === */
+        #footer {
+            clear: both;
+            border-top: 1px solid #ccc;
+            padding: 10px 20px;
+            font-size: 11px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="page">
+
+        <!-- HEADER -->
+        <div id="header">
+            <!-- <img src="background.png" alt="background" style="background: fixed;"> -->
+            <img src="logo.png" alt="Yoko's Kitchen Logo" style="margin: 0 10;">
+            <h1>YOKO'S KITCHEN</h1>
+            <p>Japanese Cooking Classes</p>
+            <div class="clear"></div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="#" class="active">home</a>
+            <a href="#">classes</a>
+            <a href="#">catering</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div id="main">
+
+            <!-- RIGHT SIDEBAR -->
+            <div id="sidebar">
+                <h2>Popular Recipes</h2>
+                <a href="#">Yakitori (grilled chicken)</a>
+                <a href="#">Tsukune (minced chicken patties)</a>
+                <a href="#">Okonomiyaki (savory pancakes)</a>
+                <a href="#">Mizutaki (chicken stew)</a>
+
+                <h2 class="contact-heading">Contact</h2>
+                <p>
+                    <b>Yoko's Kitchen</b><br>
+                    27 Redchurch Street<br>
+                    Shoreditch<br>
+                    <b>London E2 7DP</b>
+                </p>
+            </div>
+
+            <!-- COURSE 1: Japanese Vegetarian -->
+            <div class="course-row">
+                <div class="course-img">
+                    <img src="bok-choi.jpg" alt="Bok Choi">
+                    <p>Bok Choi</p>
+                </div>
+                <div class="course-text">
+                    <h2>Japanese Vegetarian</h2>
+                    <h3>Five week course in London</h3>
+                    <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of
+                        rice and noodle dishes.</p>
+                </div>
+            </div>
+
+            <!-- COURSE 2: Sauces Masterclass -->
+            <div class="course-row">
+                <div class="course-img">
+                    <img src="teriyaki.jpg" alt="Teriyaki Sauce">
+                    <p>Teriyaki Sauce</p>
+                </div>
+                <div class="course-text">
+                    <h2>Sauces Masterclass</h2>
+                    <h3>One day workshop</h3>
+                    <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range
+                        of Japanese cookery.</p>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            &copy; 2011 Yoko's Kitchen
+        </div>
+
+    </div>
+
+</body>
+
+</html>

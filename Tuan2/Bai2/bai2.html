@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example Cafe Menu</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 20px;
+            background-color: #fff;
+        }
+
+        /* === HEADER === */
+        #header {
+            text-align: center;
+            background-color: #f4b8b8;
+            padding: 15px;
+        }
+        #header h1 {
+            color: darkred;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+
+        /* === NAVIGATION BAR === */
+        #navbar {
+            background-color: #e8a0a0;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        #navbar a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 15px;
+            font-size: 13px;
+        }
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+        #navbar img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        #navbar input[type="text"] {
+            margin-left: 20px;
+        }
+        #navbar input[type="button"] {
+            margin-left: 3px;
+        }
+
+        /* === LAYOUT CHINH === */
+        #wrapper {
+            display: flex;
+        }
+
+        /* === LEFT SIDEBAR === */
+        #left-sidebar {
+            width: 140px;
+            padding: 10px 5px;
+        }
+        #left-sidebar a {
+            display: block;
+            background-color: #e8a0a0;
+            color: darkred;
+            text-decoration: none;
+            padding: 6px 10px;
+            margin-bottom: 4px;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+        #left-sidebar a:hover {
+            background-color: #d48080;
+        }
+        #left-sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #e8a0a0;
+            margin-top: 15px;
+            object-fit: cover;
+        }
+
+        /* === CENTER CONTENT === */
+        #content {
+            flex: 1;
+            padding: 10px 20px;
+        }
+
+        /* === Starter & Desserts heading === */
+        .menu-heading {
+            background-color: #f5f0d0;
+            padding: 5px 10px;
+            color: darkred;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            text-transform: capitalize;
+        }
+
+        /* === Menu items === */
+        .menu-item {
+            margin: 3px 0;
+            font-size: 14px;
+        }
+        .menu-item a {
+            color: purple;
+            font-size: 12px;
+        }
+        .menu-item-special {
+            color: darkred;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .menu-item-special a {
+            color: purple;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* === Back to Top link === */
+        .back-to-top a {
+            color: red;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        /* === INFORMATION section === */
+        .info-heading {
+            background-color: #f5f0d0;
+            padding: 5px 10px;
+            color: darkred;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        #info-form {
+            padding: 10px 0;
+        }
+        #info-form input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin: 5px 10px 5px 0;
+        }
+        #info-form select {
+            width: 215px;
+            padding: 5px;
+            margin: 5px 10px 5px 0;
+        }
+        #info-form textarea {
+            width: 500px;
+            height: 80px;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        #info-form label {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        /* === RIGHT SIDEBAR (Events) === */
+        #right-sidebar {
+            width: 220px;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px;
+        }
+        #right-sidebar h2 {
+            color: white;
+            font-size: 24px;
+            margin-top: 0;
+        }
+        #right-sidebar h3 {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        #right-sidebar img {
+            width: 100%;
+            height: auto;
+        }
+        #right-sidebar p {
+            font-size: 12px;
+            color: #ccc;
+            line-height: 1.4;
+        }
+        #right-sidebar a {
+            color: red;
+            font-size: 12px;
+        }
+
+        /* === FOOTER === */
+        #footer {
+            background-color: #f4b8b8;
+            text-align: center;
+            padding: 12px;
+            color: darkred;
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <a name="top"></a>
+
+    <!-- HEADER -->
+    <div id="header">
+        <h1><i><u>EXAMPLE CAFE MENU</u></i></h1>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <div id="navbar">
+        <img src="icons8-home-50.png" alt="Home">
+        <a href="#starter">STARTER</a>
+        <a href="#maincourses">MAIN COURSES</a>
+        <a href="#desserts">DESSERTS</a>
+        <input type="text" size="15">
+        <input type="button" value="Go">
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div id="wrapper">
+
+        <!-- LEFT SIDEBAR -->
+        <div id="left-sidebar">
+            <a href="#">Cafe Latte</a>
+            <a href="#">Cappuccino</a>
+            <a href="#">Cheese Blue</a>
+            <a href="#">Ice-cream Cafe</a>
+            <a href="#">Italian Cuisine</a>
+            <br>
+            <img src="company.png" alt="Company Event">
+        </div>
+
+        <!-- CENTER CONTENT -->
+        <div id="content">
+
+            <!-- STARTER SECTION -->
+            <a name="starter"></a>
+            <div class="menu-heading">S t a r t e r</div>
+            <ul>
+                <li class="menu-item">Chesnut and Mushroom Goujons <a href="#">(v)</a></li>
+                <li class="menu-item">Goat Cheese<a href="#">(v)</a></li>
+                <li class="menu-item menu-item-special">HONEY SOY CHICKEN KEBABS<a href="#">(V)</a></li>
+                <li class="menu-item">Seafood Salad<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+            <!-- DESSERTS SECTION -->
+            <a name="desserts"></a>
+            <div class="menu-heading">D e s s e r t s</div>
+            <ul>
+                <li class="menu-item">Lemon Sorbet <a href="#">(v)</a></li>
+                <li class="menu-item">Chocolate Mud Pie<a href="#">(v)</a></li>
+                <li class="menu-item">Pecan Pie<a href="#">(v)</a></li>
+                <li class="menu-item">Selection of fine Cheeses from Around the World<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+            <!-- INFORMATION SECTION -->
+            <a name="maincourses"></a>
+            <div class="info-heading">I N F O R M A T I O N</div>
+            <div id="info-form">
+                <form>
+                    <div>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Telephone">
+                    </div>
+                    <div>
+                        <select>
+                            <option>USA</option>
+                            <option>Vietnam</option>
+                            <option>Japan</option>
+                            <option>Other</option>
+                        </select>
+                        <input type="radio" name="type"> <label>Vietnamese</label>
+                        <input type="radio" name="type"> <label>Foreigner</label>
+                    </div>
+                    <div>
+                        <textarea placeholder="Comment"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR (Events) -->
+        <div id="right-sidebar">
+            <h2>Events</h2>
+
+            <h3>Regular Meetings</h3>
+            <img src="meeting.png" alt="Regular Meetings">
+            <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#">Read more...</a></p>
+
+            <h3>Product Launches</h3>
+            <img src="launch.png" alt="Product Launches">
+            <p>Launch your product with ease in a space that truly fits its image. <a href="#">Read more...</a></p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        ABC Company &copy; - 12345678 - abccoffee@gmail.com
+    </div>
+
+</body>
+</html>

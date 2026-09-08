@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; font-size: 14px; }
+    .form2-container { width: 700px; border: 1px solid #6c9cd4; padding: 15px; }
+    .form2-container h2 { margin-top: 0; }
+    .form2-container fieldset { border: 1px solid #888; margin-bottom: 10px; padding: 10px; }
+    .form2-container legend { color: #333; }
+    .form2-container .form-row { margin-bottom: 8px; display: flex; }
+    .form2-container .label-col { width: 100px; }
+    .form2-container .label-col-long { width: 160px; }
+</style>
+</head>
+<body>
+    <div class="form2-container">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Your message:</legend>
+                <div class="form-row">
+                    <label class="label-col">To</label>
+                    <input type="text" value="Example Cafe" style="width: 180px;" readonly>
+                </div>
+                <div class="form-row">
+                    <label class="label-col">Your email</label>
+                    <input type="email" style="width: 180px;">
+                </div>
+                <div class="form-row">
+                    <label class="label-col">Message</label>
+                    <textarea rows="6" style="width: 350px;"></textarea>
+                </div>
+                <div class="form-row" style="margin-top: 10px;">
+                    <label class="label-col">Attach File</label>
+                    <input type="file">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>How you found us:</legend>
+                <div class="form-row">
+                    <label class="label-col-long">How did you hear of us</label>
+                    <select style="width: 150px;"><option>Google</option></select>
+                </div>
+                <div class="form-row">
+                    <label class="label-col-long">Newsletter</label>
+                    <label style="font-size: 13px;">
+                        <input type="checkbox" checked> Ensure this box is checked if you would like to receive email updates
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+</body>
+</html>

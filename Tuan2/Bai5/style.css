@@ -1,0 +1,161 @@
+body {
+    font-family: Georgia, serif;
+    color: #333;
+    margin: 20px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* === CONTAINER bao quanh toan bo === */
+#page {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* === LOGO === */
+#logo {
+    text-align: right;
+    padding: 10px 15px;
+    border-bottom: 4px solid goldenrod;
+}
+
+#logo img {
+    width: 260px;
+}
+
+/* === WRAPPER cho sidebar + content === */
+#wrapper {
+    display: flex;
+}
+
+/* === SIDEBAR === */
+#sidebar {
+    width: 170px;
+    min-width: 140px;
+    padding: 10px;
+    background-image: url('back.jpg');
+    background-repeat: repeat;
+    border-right: 1px solid #ccc;
+}
+
+#sidebar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 13px;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+    color: #cc6600;
+}
+
+#sidebar a:visited {
+    color: #555;
+}
+
+/* === CONTENT === */
+#content {
+    flex: 1;
+    padding: 15px 25px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 22px;
+    color: #cc6600;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #cc6600;
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* === BASIC MATERIALS BOX === */
+#materials {
+    float: right;
+    width: 210px;
+    border: 2px solid #cc6600;
+    background-color: #fff8f0;
+    padding: 10px 15px;
+    margin: 0 0 15px 15px;
+}
+
+#materials h3 {
+    font-size: 15px;
+    color: #cc6600;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#materials ul {
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* === SAMPLE IMAGE AREA === */
+.sample-area {
+    position: relative;
+}
+
+.sample-area img {
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #999;
+}
+
+.textbox {
+    position: absolute;
+    width: 140px;
+    padding: 8px;
+    font-size: 11px;
+    line-height: 1.4;
+    background-color: #fff;
+    border: 2px solid #cc6600;
+    color: #333;
+}
+
+.box1 {
+    top: 10px;
+    right: 0;
+}
+
+.box2 {
+    top: 200px;
+    left: 0;
+}
+
+.box3 {
+    bottom: 30px;
+    right: 0;
+}
+
+/* === FOOTER === */
+#footer {
+    clear: both;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px;
+    border-top: 4px solid goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: goldenrod;
+    font-variant: small-caps;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; font-size: 14px; }
+    .form1-container { background-color: #9bd2ff; width: 650px; padding: 20px 40px; border: 1px solid #ccc; }
+    .form1-container h2, .form1-container p { text-align: center; margin-top: 0; }
+    .form1-container .form-row { margin-bottom: 8px; display: flex; align-items: center; }
+    .form1-container .label-col { width: 150px; }
+    .form1-container hr { border: 0; border-top: 1px solid #555; margin: 15px 0; }
+    .radio-group, .checkbox-group { display: flex; flex-direction: column; width: 180px; }
+</style>
+</head>
+<body>
+    <div class="form1-container">
+        <h2>Registration Form</h2>
+        <p>Register your Jackson Electronics product here</p>
+        <form action="#">
+            <div class="form-row">
+                <label class="label-col">First Name:</label>
+                <input type="text" style="width: 140px; margin-right: 10px;">
+                <label>Last Name: </label>
+                <input type="text" style="width: 140px; margin-left: 5px;">
+            </div>
+            <div class="form-row"><label class="label-col">Address #1:</label><input type="text" style="width: 260px;"></div>
+            <div class="form-row"><label class="label-col">Address #2:</label><input type="text" style="width: 260px;"></div>
+            <div class="form-row">
+                <label class="label-col">City:</label>
+                <input type="text" style="width: 130px; margin-right: 10px;">
+                <label>State: </label>
+                <input type="text" style="width: 40px; margin-left: 5px; margin-right: 10px;">
+                <label>Zip: </label>
+                <input type="text" style="width: 60px; margin-left: 5px;">
+            </div>
+            <div class="form-row"><label class="label-col">Country:</label><input type="text" value="United States" style="width: 180px;"></div>
+            <hr>
+            <div class="form-row">
+                <label class="label-col">Product:</label>
+                <select style="width: 120px;"><option>ScanMaster</option></select>
+            </div>
+            <div class="form-row"><label class="label-col">Date Purchased:</label><input type="text" style="width: 180px;"></div>
+            <div class="form-row"><label class="label-col">Serial #:</label><input type="text" style="width: 180px;"></div>
+            <div class="form-row" style="align-items: flex-start;">
+                <label class="label-col">Used for:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="usedFor"> Home</label>
+                    <label><input type="radio" name="usedFor" checked> Business</label>
+                    <label><input type="radio" name="usedFor"> Government</label>
+                </div>
+                <div class="radio-group">
+                    <label><input type="radio" name="usedFor"> Educational Institution</label>
+                    <label><input type="radio" name="usedFor"> Other</label>
+                </div>
+            </div>
+            <div class="form-row" style="align-items: flex-start;">
+                <label class="label-col">System (check all that apply):</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Windows</label>
+                    <label><input type="checkbox"> Macintosh</label>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> UNIX</label>
+                    <label><input type="checkbox"> Other</label>
+                </div>
+            </div>
+            <hr>
+            <div class="form-row" style="align-items: flex-start;">
+                <label class="label-col">Comments?:</label>
+                <textarea rows="5" style="width: 440px;"></textarea>
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <button type="submit">Click to register</button>
+                <button type="button">Click to cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

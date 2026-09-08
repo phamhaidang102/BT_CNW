@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example Cafe Menu</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 30px;
+        }
+
+        #page {
+            border: 1px solid #999;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkred;
+            font-style: italic;
+        }
+
+        h2 {
+            color: darkred;
+            background-color: #f5f0d0;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-top: 5px;
+        }
+
+        li {
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        li a {
+            color: purple;
+            font-size: 12px;
+        }
+
+        .special {
+            color: darkred;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .special a {
+            color: purple;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .back-to-top a {
+            color: red;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        #nav-links {
+            font-size: 14px;
+            color: #666;
+        }
+
+        #nav-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        #nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <a name="top"></a>
+
+        <!-- TITLE -->
+        <h1><i>EXAMPLE CAFE MENU</i></h1>
+
+        <hr>
+
+        <!-- NAVIGATION -->
+        <div id="nav-links">
+            <a href="#starter">Starter</a>
+            <a href="#maincourses">Main Courses</a>
+            <a href="#desserts">Desserts</a>
+        </div>
+
+        <hr>
+
+        <!-- STARTER -->
+        <a name="starter"></a>
+        <h2>Starter</h2>
+        <ul>
+            <li>Chesnut and Mushroom Goujons <a href="#">(v)</a></li>
+            <li>Goat Cheese<a href="#">(v)</a></li>
+            <li class="special">HONEY SOY CHICKEN KEBABS<a href="#">(V)</a></li>
+            <li>Seafood Salad<a href="#">(v)</a></li>
+        </ul>
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+        <!-- DESSERTS -->
+        <a name="desserts"></a>
+        <h2>Desserts</h2>
+        <ul>
+            <li>Lemon Sorbet <a href="#">(v)</a></li>
+            <li>Chocolate Mud Pie<a href="#">(v)</a></li>
+            <li>Pecan Pie<a href="#">(v)</a></li>
+            <li>Selection of fine Cheeses from Around the World<a href="#">(v)</a></li>
+        </ul>
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+        <br><br><br>
+
+    </div>
+</body>
+</html>

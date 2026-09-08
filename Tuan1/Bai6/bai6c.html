@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Date Form</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; font-size: 14px; }
+    .form3-container { width: 250px; border: 1px solid #6c9cd4; padding: 15px; }
+    .form3-container .form-group { margin-bottom: 15px; }
+    .form3-container label { display: block; margin-bottom: 3px; }
+    .form3-container input[type="text"], 
+    .form3-container input[type="tel"],
+    .form3-container input[type="email"],
+    .form3-container input[type="date"] { width: 100%; box-sizing: border-box; }
+    .form3-container input[type="color"] { width: 50px; height: 25px; padding: 0; }
+    .form3-container .submit-btn { text-align: center; }
+</style>
+</head>
+<body>
+    <div class="form3-container">
+        <form action="#">
+            <div class="form-group"><label>Name:</label><input type="text"></div>
+            <div class="form-group"><label>Telephone Number:</label><input type="tel"></div>
+            <div class="form-group"><label>Email:</label><input type="email"></div>
+            <div class="form-group"><label>Favorite Color:</label><input type="color" value="#0000ff"></div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <input type="date" value="2015-07-16">
+            </div>
+            <div class="submit-btn"><button type="submit">Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>
