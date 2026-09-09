@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav-bar {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 40px;
+            color: whitesmoke;
+        }
+        
+        #header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 10px 40px;
+            border-bottom: 4px dotted white;
+        }
+        
+        #sky {
+            font-size: 36px;
+            font-family: "Arial Black", Impact, sans-serif;
+            font-weight: 900;
+            -webkit-text-stroke: 1.5px #155b75;
+            text-shadow: 1px 5px 0px #155b75;
+            color: white;
+            margin: 0;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #25dbf7, #127c8c);
+            background-repeat: no-repeat;
+            min-height: auto;
+            margin: 0;
+            color: white;
+        }
+        
+        #content {
+            display: flex;
+            gap: 40px;
+            padding: 20px 40px;
+        }
+        
+        #left,
+        #right {
+            flex: 1;
+        }
+        
+        #right img {
+            width: 70%;
+        }
+        
+        #right p {
+            color: rgb(60, 85, 223);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-container">
+
+        <ul id="nav-bar">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <h2 id="sky">Sky World</h2>
+
+    </div>
+    <div id="content">
+        <div id="left">
+            <h1>Registration Information</h1>
+            <p>Start your travel planning now with our on-line tour regstration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect custom built for your group's needs .</p>
+            <form id="reg-form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="title">Tilte</label>
+                        </td>
+                        <td>
+                            <select id="Title">
+                                <option value="mr">Mr.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="ms">Ms.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="full-name">Full name*</label></td>
+                        <td><input type="text" id="full-name" placeholder="First name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Mailling address</label></td>
+                        <td><input type="text" id="address" placeholder="Mailling address"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City</label></td>
+                        <td><input type="text" name="city" id="city" placeholder="City"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td><input type="text" name="country" id="country" placeholder="Country"></td>
+                    </tr>
+                    <tr>
+                        <td id="label-textarea">
+                            <label for="request">Specific questions or<br>requests about your tour</label>
+                        </td>
+                        <td>
+                            <textarea id="request" rows="7" cols="30" placeholder="Specific questions or requests about your tour"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="right">
+            <img src="sky.png" alt="skypng">
+            <p>You've arrived</p>
+            <p>Journeys as great as the destinations.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
