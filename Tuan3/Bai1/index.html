@@ -14,7 +14,7 @@
             gap: 40px;
             color: whitesmoke;
         }
-        
+
         #header-container {
             display: flex;
             justify-content: space-between;
@@ -22,7 +22,7 @@
             padding: 10px 40px;
             border-bottom: 4px dotted white;
         }
-        
+
         #sky {
             font-size: 36px;
             font-family: "Arial Black", Impact, sans-serif;
@@ -32,111 +32,162 @@
             color: white;
             margin: 0;
         }
-        
+
         body {
-            background: linear-gradient(180deg, #25dbf7, #127c8c);
-            background-repeat: no-repeat;
-            min-height: auto;
+            background-color: #e9ecef;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: linear-gradient(180deg, #23b2ff, #245afb);
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
             color: white;
         }
-        
+
         #content {
             display: flex;
             gap: 40px;
             padding: 20px 40px;
         }
-        
-        #left,
-        #right {
+
+        #left {
             flex: 1;
         }
-        
-        #right img {
-            width: 70%;
+
+        #right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
         }
-        
-        #right p {
-            color: rgb(60, 85, 223);
+
+        #right img {
+            width: 90%;
+            border: 2px solid #0d4f6c;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #text-arrived {
+            color: #0000cd;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 34px;
+            font-weight: 900;
+            margin: 25px 0 5px 0;
+            text-align: center;
+        }
+
+        #text-journeys {
+            color: #0000cd;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: 4px dotted white;
+            font-size: 12px;
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <div id="header-container">
 
-    <div id="header-container">
-
-        <ul id="nav-bar">
-            <li>Home</li>
-            <li>Products</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        <h2 id="sky">Sky World</h2>
-
-    </div>
-    <div id="content">
-        <div id="left">
-            <h1>Registration Information</h1>
-            <p>Start your travel planning now with our on-line tour regstration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect custom built for your group's needs .</p>
-            <form id="reg-form">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="title">Tilte</label>
-                        </td>
-                        <td>
-                            <select id="Title">
-                                <option value="mr">Mr.</option>
-                                <option value="mrs">Mrs.</option>
-                                <option value="ms">Ms.</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="full-name">Full name*</label></td>
-                        <td><input type="text" id="full-name" placeholder="First name"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="address">Mailling address</label></td>
-                        <td><input type="text" id="address" placeholder="Mailling address"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="city">City</label></td>
-                        <td><input type="text" name="city" id="city" placeholder="City"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="country">Country</label></td>
-                        <td><input type="text" name="country" id="country" placeholder="Country"></td>
-                    </tr>
-                    <tr>
-                        <td id="label-textarea">
-                            <label for="request">Specific questions or<br>requests about your tour</label>
-                        </td>
-                        <td>
-                            <textarea id="request" rows="7" cols="30" placeholder="Specific questions or requests about your tour"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div id="right">
-            <img src="sky.png" alt="skypng">
-            <p>You've arrived</p>
-            <p>Journeys as great as the destinations.</p>
+            <ul id="nav-bar">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <h2 id="sky">Sky World</h2>
 
         </div>
-    </div>
+        <div id="content">
+            <div id="left">
+                <h1>Registration Information</h1>
+                <p>Start your travel planning now with our on-line tour regstration form. Just tell us a little about
+                    yourself and your group and one of our travel experts will contact you to create the perfect custom
+                    built for your group's needs .</p>
+                <form id="reg-form">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="title">Tilte</label>
+                            </td>
+                            <td>
+                                <select id="Title">
+                                    <option value="mr">Mr.</option>
+                                    <option value="mrs">Mrs.</option>
+                                    <option value="ms">Ms.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="full-name">Full name*</label></td>
+                            <td><input type="text" id="full-name" placeholder="First name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Mailling address</label></td>
+                            <td><input type="text" id="address" placeholder="Mailling address"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">City</label></td>
+                            <td><input type="text" name="city" id="city" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Country</label></td>
+                            <td><input type="text" name="country" id="country" placeholder="Country"></td>
+                        </tr>
+                        <tr>
+                            <td id="label-textarea">
+                                <label for="request">Specific questions or<br>requests about your tour</label>
+                            </td>
+                            <td>
+                                <textarea id="request" rows="7" cols="30"
+                                    placeholder="Specific questions or requests about your tour"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="right">
+                <img src="sky.png" alt="skypng">
+                <p id="text-arrived">You've arrived.</p>
+                <p id="text-journeys">Journeys as great as the destinations.</p>
 
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p>2016 Sky World Tours. All rights reserved.</p>
+
+            <p>Contact information: Student Name | StudentID | Testing Date
+            </p>
+        </div>
 </body>
 
 </html>
