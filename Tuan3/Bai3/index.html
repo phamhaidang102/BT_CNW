@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Travel Company</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            /* Màu nền xám nhạt để khối chính nổi bật */
+            display: flex;
+            justify-content: center;
+            /* Căn giữa theo display: flex */
+        }
+
+        #container {
+            width: 850px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #999;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- HEADER --- */
+        .header-top {
+            background-color: #b05b22;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .header-top h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #92b826;
+            text-transform: uppercase;
+            font-family: "Georgia", Times, serif;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6), -1px -1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        .nav {
+            display: flex;
+            background-color: white;
+            border-bottom: 1px solid #333;
+            padding: 8px 20px;
+            gap: 40px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #d16b27;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- BANNER --- */
+        .banner {
+            width: 100%;
+            height: 40px;
+            background-image: url('line.png');
+            background-repeat: repeat-x;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .main-content {
+            display: flex;
+            padding: 30px 40px;
+            gap: 40px;
+        }
+
+        .left-col {
+            flex: 2;
+            border-right: 1px solid #ddd;
+            padding-right: 40px;
+        }
+
+        .left-col h2 {
+            color: #c49a37;
+            font-family: "Georgia", Times, serif;
+            font-size: 26px;
+            letter-spacing: 2px;
+            margin-top: 0;
+        }
+
+        .left-col .intro {
+            color: #c49a37;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #555;
+            outline: none;
+            background: transparent;
+        }
+
+        .form-group input::placeholder {
+            color: #777;
+        }
+
+        .btn-submit {
+            background-color: #788a00;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 2px;
+        }
+
+        /* --- RIGHT COLUMN --- */
+        .right-col {
+            flex: 1;
+        }
+
+        .links-box {
+            background-color: #faeedd;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .links-box h3 {
+            color: #63402e;
+            margin-top: 0;
+            font-family: "Georgia", Times, serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .links-box ul {
+            list-style-type: square;
+            padding-left: 15px;
+            color: #b05b22;
+        }
+
+        .links-box li {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .links-box a {
+            text-decoration: none;
+            color: #d16b27;
+        }
+
+        .more-info h3 {
+            color: #63402e;
+            font-family: "Georgia", Times, serif;
+            font-size: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .info-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            text-align: justify;
+        }
+
+        .info-content img {
+            width: 70px;
+            height: 50px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+
+        .info-content p {
+            font-size: 13px;
+            color: #555;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            text-align: center;
+            padding: 15px 10px 30px 10px;
+            font-size: 15px;
+            color: #333;
+            border-top: 1px solid #999;
+            background-image: url('footer.png');
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- HEADER -->
+        <div class="header-top">
+            <h1>Autumn Travel Company</h1>
+        </div>
+
+        <!-- NAV -->
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">Order</a>
+        </div>
+
+        <!-- BANNER -->
+        <div class="banner"></div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- Cột trái: Form đăng ký -->
+            <div class="left-col">
+                <h2>Sign up for membership benefits</h2>
+                <div class="intro">
+                    Our philosophical values are transparency, respect, formality and responsibility. Our stimulus is
+                    your enthusiasm. Our motto is your satisfaction.
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Retype password">
+                    </div>
+                    <button type="button" class="btn-submit">SIGN ME UP</button>
+                </form>
+            </div>
+
+            <!-- Cột phải: Links và More info -->
+            <div class="right-col">
+
+                <div class="links-box">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Make your Own Tour</a></li>
+                        <li><a href="#">Maldives Tours</a></li>
+                        <li><a href="#">Nature & Adventure</a></li>
+                        <li><a href="#">Readymade Tours</a></li>
+                        <li><a href="#">Europe Tours</a></li>
+                        <li><a href="#">Rusia Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="more-info">
+                    <h3>More info</h3>
+                    <div class="info-content">
+                        <img src="leaf.png" alt="Leaf image">
+                        <p>Our purpose is the client who gives to us the opportunity to serve and to make known the
+                            reality around the world.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            &copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017
+        </div>
+
+    </div>
+
+</body>
+
+</html>
