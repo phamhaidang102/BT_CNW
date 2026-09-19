@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example Cafe Menu</title>
+    
+<link rel="stylesheet" href="../../../Tuan3/Bai1/css/bootstrap.min.css">
+<script src="../../../Tuan3/Bai1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+<div class="container">
+
+    <a name="top"></a>
+
+    <!-- HEADER -->
+    <div id="header">
+        <h1 class="text-primary text-center my-3"><i><u>EXAMPLE CAFE MENU</u></i></h1>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <div id="navbar">
+        <img class="img-fluid"  src="icons8-home-50.png" alt="Home">
+        <a href="#starter">STARTER</a>
+        <a href="#maincourses">MAIN COURSES</a>
+        <a href="#desserts">DESSERTS</a>
+        <input class="form-control" type="text" size="15">
+        <input class="btn btn-primary" type="button" value="Go">
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div id="wrapper">
+
+        <!-- LEFT SIDEBAR -->
+        <div id="left-sidebar">
+            <a href="#">Cafe Latte</a>
+            <a href="#">Cappuccino</a>
+            <a href="#">Cheese Blue</a>
+            <a href="#">Ice-cream Cafe</a>
+            <a href="#">Italian Cuisine</a>
+            <br>
+            <img class="img-fluid"  src="company.png" alt="Company Event">
+        </div>
+
+        <!-- CENTER CONTENT -->
+        <div id="content">
+
+            <!-- STARTER SECTION -->
+            <a name="starter"></a>
+            <div class="menu-heading">S t a r t e r</div>
+            <ul>
+                <li class="menu-item">Chesnut and Mushroom Goujons <a href="#">(v)</a></li>
+                <li class="menu-item">Goat Cheese<a href="#">(v)</a></li>
+                <li class="menu-item menu-item-special">HONEY SOY CHICKEN KEBABS<a href="#">(V)</a></li>
+                <li class="menu-item">Seafood Salad<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+            <!-- DESSERTS SECTION -->
+            <a name="desserts"></a>
+            <div class="menu-heading">D e s s e r t s</div>
+            <ul>
+                <li class="menu-item">Lemon Sorbet <a href="#">(v)</a></li>
+                <li class="menu-item">Chocolate Mud Pie<a href="#">(v)</a></li>
+                <li class="menu-item">Pecan Pie<a href="#">(v)</a></li>
+                <li class="menu-item">Selection of fine Cheeses from Around the World<a href="#">(v)</a></li>
+            </ul>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
+
+            <!-- INFORMATION SECTION -->
+            <a name="maincourses"></a>
+            <div class="info-heading">I N F O R M A T I O N</div>
+            <div id="info-form">
+                <form>
+                    <div>
+                        <input class="form-control" type="text" placeholder="First Name">
+                        <input class="form-control" type="text" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" placeholder="Email">
+                        <input class="form-control" type="text" placeholder="Telephone">
+                    </div>
+                    <div>
+                        <select class="form-select">
+                            <option>USA</option>
+                            <option>Vietnam</option>
+                            <option>Japan</option>
+                            <option>Other</option>
+                        </select>
+                        <input type="radio" name="type"> <label>Vietnamese</label>
+                        <input type="radio" name="type"> <label>Foreigner</label>
+                    </div>
+                    <div>
+                        <textarea class="form-control" placeholder="Comment"></textarea>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                        <input class="btn btn-primary" type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR (Events) -->
+        <div id="right-sidebar">
+            <h2 class="text-white bg-success p-2 mt-4">Events</h2>
+
+            <h3 class="text-white bg-success p-2 w-50 mt-3">Regular Meetings</h3>
+            <img class="img-fluid"  src="meeting.png" alt="Regular Meetings">
+            <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#">Read more...</a></p>
+
+            <h3 class="text-white bg-success p-2 w-50 mt-3">Product Launches</h3>
+            <img class="img-fluid"  src="launch.png" alt="Product Launches">
+            <p>Launch your product with ease in a space that truly fits its image. <a href="#">Read more...</a></p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        ABC Company &copy; - 12345678 - abccoffee@gmail.com
+    </div>
+
+</div>
+</body>
+</html>
+

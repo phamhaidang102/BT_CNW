@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Travel Company</title>
+    <link rel="stylesheet" href="../../../Tuan3/Bai1/css/bootstrap.min.css">
+    <style>
+        .header-bg { background-color: #b35900; color: #a5cc52; font-family: serif; letter-spacing: 2px; }
+        .nav-link { color: #d35400; font-weight: 500; font-size: 0.9rem; border-right: 1px solid #ddd; border-radius: 0; }
+        .nav-link:last-child { border-right: none; }
+        .nav-link:hover { color: #e67e22; background-color: #f9f9f9; }
+        .text-custom-yellow { color: #c0a16b; font-weight: bold; }
+        .links-box { background-color: #faebd7; border-radius: 8px; padding: 15px; }
+        .links-box h4 { color: #8b4513; font-weight: bold; font-family: serif; }
+        .links-box ul { list-style: square; padding-left: 20px; }
+        .links-box a { color: #cd853f; text-decoration: none; font-size: 0.85rem; }
+        .links-box a:hover { text-decoration: underline; color: #d2691e; }
+        .more-info-title { color: #8b4513; font-weight: bold; font-family: serif; }
+        .btn-custom { background-color: #6b8e23; color: white; border: none; font-weight: bold; font-size: 0.8rem; padding: 8px 15px; }
+        .btn-custom:hover { background-color: #556b2f; color: white; }
+        .form-control-custom { border: none; border-bottom: 1px solid #ccc; border-radius: 0; padding-left: 0; box-shadow: none; font-size: 0.9rem; }
+        .form-control-custom:focus { border-bottom-color: #8b4513; box-shadow: none; }
+        .footer-bg { background-image: url('footer.png'); background-repeat: repeat-x; background-position: bottom; padding: 15px; text-align: center; border-top: 1px solid #ccc; }
+        .banner-img { width: 100%; height: 120px; object-fit: cover; }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container my-4 bg-white border p-0 shadow-sm" style="max-width: 900px;">
+
+    <!-- HEADER -->
+    <div class="header-bg p-3 text-center">
+        <h1 class="mb-0 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">AUTUMN TRAVEL COMPANY</h1>
+    </div>
+
+    <!-- NAV -->
+    <ul class="nav nav-pills justify-content-start border-bottom px-3 py-1">
+        <li class="nav-item"><a class="nav-link px-4 py-1" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link px-4 py-1" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link px-4 py-1" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link px-4 py-1" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link px-4 py-1" href="#">Order</a></li>
+    </ul>
+
+    <!-- BANNER -->
+    <div>
+        <div style="height: 40px; background-image: url('line.png'); background-repeat: repeat-x; width: 100%;"></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="row p-4">
+
+        <!-- Cột trái: Form đăng ký -->
+        <div class="col-md-8 pe-md-5">
+            <h3 class="text-custom-yellow mb-3">Sign up for membership benefits</h3>
+            <p class="fst-italic text-custom-yellow small mb-4 lh-base">
+                Our philosophical values are transparency, respect, formality and responsibility. 
+                Our stimulus is your enthusiasm. Our motto is your satisfaction.
+            </p>
+
+            <form>
+                <div class="mb-4">
+                    <input type="text" class="form-control form-control-custom" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                    <input type="email" class="form-control form-control-custom" placeholder="E-mail">
+                </div>
+                <div class="mb-4">
+                    <input type="password" class="form-control form-control-custom" placeholder="Password">
+                </div>
+                <div class="mb-4">
+                    <input type="password" class="form-control form-control-custom" placeholder="Retype password">
+                </div>
+                <button type="button" class="btn btn-custom mt-2">SIGN ME UP</button>
+            </form>
+        </div>
+
+        <!-- Cột phải: Links và More info -->
+        <div class="col-md-4">
+            <div class="links-box mb-4">
+                <h4 class="mb-3">Links</h4>
+                <ul>
+                    <li><a href="#">Make your Own Tour</a></li>
+                    <li><a href="#">Maldives Tours</a></li>
+                    <li><a href="#">Nature &amp; Adventure</a></li>
+                    <li><a href="#">Readymade Tours</a></li>
+                    <li><a href="#">Europe Tours</a></li>
+                    <li><a href="#">Rusia Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="more-info mt-4">
+                <h4 class="more-info-title mb-3">More info</h4>
+                <div class="d-flex align-items-start">
+                    <img src="leaf.png" alt="Leaf" class="img-fluid me-3" style="width: 60px; height: 40px; object-fit: cover; border: 1px solid #ccc; padding: 2px;">
+                    <p class="small text-muted mb-0 lh-base" style="font-size: 0.8rem;">
+                        Our purpose is the client who gives to us the opportunity to serve and to make known the reality around the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-bg">
+        <span class="small fw-bold text-dark bg-white bg-opacity-75 px-2 py-1 rounded">
+            &copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017
+        </span>
+    </div>
+
+</div>
+
+<script src="../../../Tuan3/Bai1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

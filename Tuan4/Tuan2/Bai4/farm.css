@@ -1,0 +1,91 @@
+body {
+    background: url('background.jpg');
+    color: #333;
+    font-family: Georgia, serif;
+}
+
+p, ul, ol, li {
+    color: white;
+}
+
+/* === H2: Heading chinh (Welcome, Hours, Directions,...) === */
+h2 {
+    width: 400px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 8px;
+    text-indent: 5px;
+    background-color: #008000;
+    color: white;
+}
+
+/* === H3: Heading phu === */
+h3 {
+    width: 300px;
+    padding-left: 15px;
+    background-color: #008000;
+    color: white;
+}
+
+/* === ADDRESS (footer) === */
+address {
+    text-align: center;
+    border-top: 2px solid #333;
+    padding-top: 8px;
+    clear: both;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* === LINK styles === */
+a:link {
+    color: green;
+}
+a:visited {
+    color: darkgreen;
+}
+a:active {
+    color: red;
+}
+a:hover {
+    color: orange;
+}
+
+/* === DIV#links: sidebar trai === */
+#links {
+    float: left;
+    width: 130px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#links a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+/* === DIV#noidung: phan noi dung chinh === */
+#noidung {
+    margin-left: 160px;
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+
+#noidung img {
+    float: right;
+    margin: 0 0 10px 15px;
+    width: 180px;
+}

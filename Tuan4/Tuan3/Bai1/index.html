@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky World - Registration</title>
+    <link rel="stylesheet" href="../../../Tuan3/Bai1/css/bootstrap.min.css">
+    <style>
+        .header-bg { background-color: #6bb9f0; color: white; }
+        .footer-bg { background-color: #6bb9f0; color: white; }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark header-bg px-4">
+        <a class="navbar-brand fw-bold" href="#">Sky World</a>
+        <div class="ms-auto">
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Left Column: Form -->
+            <div class="col-md-6">
+                <h2 class="text-white bg-info p-2 bg-opacity-75 rounded">Registration information</h2>
+                <p class="text-muted">Start your travel planning right now with our on-line tour registration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect tour package custom built for your group's needs.</p>
+                
+                <form>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">Title</label></div>
+                        <div class="col-sm-8">
+                            <select class="form-select">
+                                <option value="mr">Mr.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="ms">Ms.</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">Full Name*</label></div>
+                        <div class="col-sm-8"><input type="text" class="form-control" placeholder="First Name"></div>
+                    </div>
+                    
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">Mailing Address</label></div>
+                        <div class="col-sm-8"><input type="text" class="form-control" placeholder="Mailing Address"></div>
+                    </div>
+                    
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">City</label></div>
+                        <div class="col-sm-8"><input type="text" class="form-control" placeholder="City"></div>
+                    </div>
+                    
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">Country</label></div>
+                        <div class="col-sm-8"><input type="text" class="form-control" placeholder="Country"></div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-4"><label class="form-label mb-0 fw-bold text-info">Specific questions or requests about your tour</label></div>
+                        <div class="col-sm-8"><textarea class="form-control" rows="5"></textarea></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-light border fw-bold text-secondary">Submit</button>
+                            <button type="reset" class="btn btn-light border fw-bold text-secondary ms-2">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Right Column: Image and Text -->
+            <div class="col-md-6 text-center mt-5 mt-md-0 d-flex flex-column justify-content-center">
+                <img src="sky.png" class="img-fluid rounded shadow-sm mb-4" alt="Sky">
+                <h3 class="text-primary fw-bold" style="color: #0d47a1 !important;">You've arrived.</h3>
+                <h5 class="text-primary fw-bold" style="color: #0d47a1 !important;">Journeys as great as the destinations.</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-center py-3 mt-5">
+        <p class="mb-1">&copy; 2016 Sky World Tours. All rights reserved.</p>
+        <p class="mb-0">Contact information: Student Name | Student ID | Testing date: 16 Sept 2016</p>
+    </footer>
+
+    <script src="../../../Tuan3/Bai1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
