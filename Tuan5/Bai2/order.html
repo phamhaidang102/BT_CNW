@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane - Order Online</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #fff; }
+
+    /* ====== NAVBAR ====== */
+    .navbar-feane {
+      background-color: #0d0d0d;
+      padding: 18px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand-feane {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffa500;
+      font-style: italic;
+      text-decoration: none;
+      font-family: Georgia, serif;
+    }
+    .nav-links { display: flex; align-items: center; gap: 30px; }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-icons { display: flex; align-items: center; gap: 15px; }
+    .nav-icons a { color: #ccc; text-decoration: none; font-size: 16px; }
+    .btn-order-online {
+      background-color: #ffa500;
+      color: #000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .btn-order-online:hover { background-color: #e69500; color: #000; }
+
+    /* ====== HERO BACKGROUND ====== */
+    .order-bg {
+      min-height: 100vh;
+      background: url('images/hero-bg.jpg') center center / cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .order-bg-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.65);
+    }
+
+    /* ====== MODAL ORDER FORM ====== */
+    .order-modal {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 6px;
+      width: 400px;
+      max-width: 90vw;
+      padding: 0;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .order-modal-header {
+      background: transparent;
+      padding: 20px 25px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+    .order-modal-header h5 {
+      font-size: 20px;
+      font-style: italic;
+      font-family: Georgia, serif;
+      color: #ffa500;
+      font-weight: 700;
+    }
+    .btn-close-modal {
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: #999;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .order-modal-body {
+      padding: 25px;
+    }
+    .order-form-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .order-input {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 10px 12px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      outline: none;
+      background: #fafafa;
+    }
+    .order-input:focus {
+      border-color: #ffa500;
+      background: #fff;
+    }
+    .order-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    .order-checkbox input { width: 16px; height: 16px; cursor: pointer; }
+    .order-checkbox label { font-size: 13px; color: #555; cursor: pointer; }
+
+    .order-modal-footer {
+      padding: 0 25px 25px;
+      display: flex;
+      gap: 12px;
+    }
+    .btn-order-submit {
+      background-color: #ffa500;
+      color: #000;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .btn-order-submit:hover { background-color: #e69500; }
+    .btn-order-close {
+      background-color: #6c757d;
+      color: #fff;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .btn-order-close:hover { background-color: #5a6268; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar-feane d-flex align-items-center justify-content-between">
+    <a href="home.html" class="navbar-brand-feane">Feane</a>
+    <div class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="book.html">BOOK TABLE</a>
+    </div>
+    <div class="nav-icons d-flex align-items-center gap-3">
+      <a href="#">&#128100;</a>
+      <a href="#">&#128722;</a>
+      <a href="#">&#128269;</a>
+      <a href="order.html" class="btn-order-online">Order Online</a>
+    </div>
+  </nav>
+
+  <!-- Order Section with background -->
+  <div class="order-bg">
+    <div class="order-bg-overlay"></div>
+
+    <!-- Order Modal -->
+    <div class="order-modal">
+      <div class="order-modal-header">
+        <h5>Order</h5>
+        <button class="btn-close-modal" onclick="window.history.back()">&#10005;</button>
+      </div>
+      <div class="order-modal-body">
+        <label class="order-form-label">Telephone</label>
+        <input type="tel" class="order-input" placeholder="">
+
+        <label class="order-form-label">Email</label>
+        <input type="email" class="order-input" placeholder="">
+
+        <div class="order-checkbox">
+          <input type="checkbox" id="check-me-out">
+          <label for="check-me-out">Check me out</label>
+        </div>
+      </div>
+      <div class="order-modal-footer">
+        <button class="btn-order-submit">Order</button>
+        <button class="btn-order-close" onclick="window.history.back()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

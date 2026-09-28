@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Template</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    body { margin: 0; padding: 0; font-family: 'Courier New', monospace; }
+
+    /* Navbar */
+    .navbar-custom {
+      background-color: #111;
+      padding: 12px 30px;
+    }
+    .navbar-custom .navbar-brand {
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .navbar-custom .nav-link {
+      color: #ccc !important;
+      font-size: 13px;
+      padding: 0 14px !important;
+    }
+    .navbar-custom .nav-link:hover { color: #fff !important; }
+    .btn-download {
+      background-color: #e91e63;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 13px;
+      padding: 6px 18px;
+      font-weight: 600;
+    }
+    .btn-download:hover { background-color: #c2185b; color: #fff; }
+
+    /* Section 1: Autumn Sale */
+    .section-autumn {
+      background-color: #d4c5e8;
+      min-height: 300px;
+    }
+    .autumn-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .autumn-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 50px;
+    }
+    .autumn-title {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #222;
+      font-family: Arial Black, sans-serif;
+    }
+    .autumn-sub {
+      font-size: 16px;
+      color: #444;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+    .btn-order {
+      border: 2px solid #333;
+      background: transparent;
+      color: #333;
+      padding: 8px 25px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      width: 160px;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn-order:hover { background-color: #333; color: #fff; }
+
+    /* Section 2: October Highlights */
+    .section-highlights {
+      background-color: #2a2a2a;
+      min-height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-highlights img.bg-road {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.4;
+    }
+    .highlights-text {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    .highlights-title {
+      color: #fff;
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-family: Arial Black, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">MAGAZINE TEMPLATE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOCK DEMOS 1 ▾</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOCK DEMOS 2 ▾</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SITE TEMPLATES 1 ▾</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SITE TEMPLATES 2 ▾</a>
+        </li>
+      </ul>
+      <div class="ms-auto">
+        <a href="#" class="btn btn-download">DOWNLOAD NOW!</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Autumn Sale Section -->
+  <div class="section-autumn">
+    <div class="row g-0">
+      <!-- Left: magazine image -->
+      <div class="col-lg-5">
+        <img src="magazin.jpg" alt="Magazine" class="autumn-img">
+      </div>
+      <!-- Right: content -->
+      <div class="col-lg-7 autumn-content">
+        <div class="autumn-title">AUTUMN SALE</div>
+        <div class="autumn-sub">Purchase summer issues! 50% OFF</div>
+        <a href="#" class="btn-order">ORDER NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- October Highlights Section -->
+  <div class="section-highlights">
+    <div class="highlights-text">
+      <h2 class="highlights-title">OCTOBER HIGHLIGHTS</h2>
+    </div>
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

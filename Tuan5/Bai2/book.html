@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane - Book A Table</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #fff; }
+
+    /* ====== NAVBAR ====== */
+    .navbar-feane {
+      background-color: #0d0d0d;
+      padding: 18px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand-feane {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffa500;
+      font-style: italic;
+      text-decoration: none;
+      font-family: Georgia, serif;
+    }
+    .nav-links { display: flex; align-items: center; gap: 30px; }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.active { color: #ffa500; }
+    .nav-icons { display: flex; align-items: center; gap: 15px; }
+    .nav-icons a { color: #ccc; text-decoration: none; font-size: 16px; }
+    .btn-order-online {
+      background-color: #ffa500;
+      color: #000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .btn-order-online:hover { background-color: #e69500; color: #000; }
+
+    /* ====== BOOKING SECTION ====== */
+    .book-section {
+      padding: 70px 60px;
+    }
+    .book-section h2 {
+      font-size: 38px;
+      font-style: italic;
+      font-family: Georgia, serif;
+      color: #111;
+      margin-bottom: 35px;
+    }
+    .form-control-feane {
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 12px 15px;
+      font-size: 13px;
+      color: #999;
+      width: 100%;
+      margin-bottom: 18px;
+      outline: none;
+    }
+    .form-control-feane:focus {
+      border-color: #ffa500;
+      box-shadow: 0 0 0 2px rgba(255,165,0,0.2);
+    }
+    .btn-book-now {
+      background-color: #ffa500;
+      color: #000;
+      border: none;
+      padding: 12px 35px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn-book-now:hover { background-color: #e69500; }
+
+    /* Map */
+    .map-col img {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar-feane d-flex align-items-center justify-content-between">
+    <a href="home.html" class="navbar-brand-feane">Feane</a>
+    <div class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="book.html" class="active">BOOK TABLE</a>
+    </div>
+    <div class="nav-icons d-flex align-items-center gap-3">
+      <a href="#">&#128100;</a>
+      <a href="#">&#128722;</a>
+      <a href="#">&#128269;</a>
+      <a href="order.html" class="btn-order-online">Order Online</a>
+    </div>
+  </nav>
+
+  <!-- Booking Section -->
+  <section class="book-section">
+    <div class="row g-5">
+      <!-- Left: Form -->
+      <div class="col-lg-6">
+        <h2>Book A Table</h2>
+        <form>
+          <input type="text" class="form-control-feane" placeholder="Your Name">
+          <input type="tel" class="form-control-feane" placeholder="Phone Number">
+          <input type="email" class="form-control-feane" placeholder="Your Email">
+          <input type="number" class="form-control-feane" placeholder="How many persons?">
+          <input type="date" class="form-control-feane">
+          <br>
+          <button type="submit" class="btn-book-now">BOOK NOW</button>
+        </form>
+      </div>
+      <!-- Right: Map -->
+      <div class="col-lg-6 map-col">
+        <img src="images/map.png" alt="Location Map">
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

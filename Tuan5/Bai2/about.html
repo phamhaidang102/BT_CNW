@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane - About</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #fff; }
+
+    /* ====== NAVBAR ====== */
+    .navbar-feane {
+      background-color: #0d0d0d;
+      padding: 18px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand-feane {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffa500;
+      font-style: italic;
+      text-decoration: none;
+      font-family: Georgia, serif;
+    }
+    .nav-links { display: flex; align-items: center; gap: 30px; }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.active { color: #ffa500; }
+    .nav-icons { display: flex; align-items: center; gap: 15px; }
+    .nav-icons a { color: #ccc; text-decoration: none; font-size: 16px; }
+    .btn-order-online {
+      background-color: #ffa500;
+      color: #000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .btn-order-online:hover { background-color: #e69500; color: #000; }
+
+    /* ====== ABOUT SECTION ====== */
+    .about-section {
+      min-height: 100vh;
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+    }
+    .about-img-col img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+    .about-content {
+      color: #fff;
+      padding: 60px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .about-content h2 {
+      font-size: 42px;
+      font-weight: 700;
+      font-style: italic;
+      font-family: Georgia, serif;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+    .about-content p {
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.9;
+      margin-bottom: 35px;
+    }
+    .btn-read-more {
+      background-color: #ffa500;
+      color: #000;
+      padding: 12px 35px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      width: fit-content;
+    }
+    .btn-read-more:hover { background-color: #e69500; color: #000; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar-feane d-flex align-items-center justify-content-between">
+    <a href="home.html" class="navbar-brand-feane">Feane</a>
+    <div class="nav-links">
+      <a href="home.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="book.html">BOOK TABLE</a>
+    </div>
+    <div class="nav-icons d-flex align-items-center gap-3">
+      <a href="#">&#128100;</a>
+      <a href="#">&#128722;</a>
+      <a href="#">&#128269;</a>
+      <a href="order.html" class="btn-order-online">Order Online</a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- Left: Burger illustration image -->
+        <div class="col-lg-6 about-img-col">
+          <img src="images/about-img.png" alt="About Feane">
+        </div>
+        <!-- Right: Text content -->
+        <div class="col-lg-6 about-content">
+          <h2>We Are Feane</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words
+            which don't look even slightly believable. If you are going to use a passage of
+            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All
+          </p>
+          <a href="#" class="btn-read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>
